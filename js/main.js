@@ -1,3 +1,5 @@
+'use strict';
+
 const inputNum = document.querySelector('.js-inputNum');
 const button = document.querySelector('.js-btn');
 const clue = document.querySelector('.js-clue');
@@ -12,13 +14,13 @@ const guessNumber = function () {
 
 button.addEventListener('click', guessNumber);
 
-//funcion para obtener el numero random
+//Generate rundom number
 function getRandomNumber(max) {
   return Math.ceil(Math.random() * max);
 }
 console.log(numRandom);
 
-//funcion para las pistas
+//Get hints/clues
 const cluesNumber = function () {
   const numValue = parseInt(inputNum.value);
   console.log(numValue);
@@ -33,7 +35,7 @@ const cluesNumber = function () {
   }
 };
 
-//funcion para los intentos
+//Tries function
 const renderNumberOfTries = function () {
   numTries++;
   tries.innerHTML = numTries;
