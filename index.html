@@ -4,10 +4,19 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Adivina el numero</title>
+    <link rel="stylesheet" href="./styles/main.css" />
   </head>
   <body>
     <main>
       <h1>Adivina el numero</h1>
+      <form class="form" action="">
+        <label for="">Introduce aquí tu numero:</label>
+        <input class="js-inputNum" type="text" />
+        <button class="js-btn" type="button">Prueba</button>
+      </form>
+      <p class="clues js-clue">Pista: Escribe el numero y dale a Prueba</p>
+      <p>Número de intentos: <span class="js-tries">0</span></p>
     </main>
+    <script type="text/javascript" src="js/main.js"></script>
   </body>
 </html>
