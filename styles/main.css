@@ -1,0 +1,16 @@
+.tries {
+  color: burlywood;
+}
+
+.title {
+  color: burlywood;
+}
+
+.btn {
+  width: 100px;
+  height: 20px;
+  background-color: burlywood;
+  border: none;
+  border-radius: 5px;
+  color: white;
+}

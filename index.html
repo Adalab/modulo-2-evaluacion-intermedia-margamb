@@ -8,14 +8,14 @@
   </head>
   <body>
     <main>
-      <h1>Adivina el numero</h1>
-      <form class="form" action="">
+      <h1 class="title">Adivina el numero</h1>
+      <form class="form" action="" method="GET">
         <label for="">Introduce aquí tu numero:</label>
-        <input class="js-inputNum" type="text" />
-        <button class="js-btn" type="button">Prueba</button>
+        <input class="js-inputNum" type="number" />
+        <input class="js-btn btn" type="button" value="Prueba" />
       </form>
       <p class="clues js-clue">Pista: Escribe el numero y dale a Prueba</p>
-      <p>Número de intentos: <span class="js-tries">0</span></p>
+      <p>Número de intentos: <span class="tries js-tries">0</span></p>
     </main>
     <script type="text/javascript" src="js/main.js"></script>
   </body>
