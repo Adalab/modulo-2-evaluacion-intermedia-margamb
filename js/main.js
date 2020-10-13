@@ -5,11 +5,6 @@ const tries = document.querySelector('.js-tries');
 let numTries = 0;
 const numRandom = parseInt(getRandomNumber(100));
 
-function getRandomNumber(max) {
-  return Math.ceil(Math.random() * max);
-}
-console.log(numRandom);
-
 const guessNumber = function () {
   cluesNumber();
   renderNumberOfTries();
@@ -17,8 +12,16 @@ const guessNumber = function () {
 
 button.addEventListener('click', guessNumber);
 
+//funcion para obtener el numero random
+function getRandomNumber(max) {
+  return Math.ceil(Math.random() * max);
+}
+console.log(numRandom);
+
+//funcion para las pistas
 const cluesNumber = function () {
   const numValue = parseInt(inputNum.value);
+  console.log(numValue);
   if (numValue < 1 || numValue > 100) {
     clue.innerHTML = 'El numero debe estar entre 1 y 100';
   } else if (numValue > numRandom) {
@@ -30,6 +33,7 @@ const cluesNumber = function () {
   }
 };
 
+//funcion para los intentos
 const renderNumberOfTries = function () {
   numTries++;
   tries.innerHTML = numTries;
