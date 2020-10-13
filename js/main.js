@@ -14,7 +14,7 @@ const guessNumber = function () {
 
 button.addEventListener('click', guessNumber);
 
-//Generate rundom number
+//Generate random number
 function getRandomNumber(max) {
   return Math.ceil(Math.random() * max);
 }
