@@ -10,9 +10,15 @@
     <main>
       <h1 class="title">Adivina el numero</h1>
       <form class="form" action="" method="GET">
-        <label for="">Introduce aquí tu numero:</label>
-        <input class="js-inputNum" type="number" />
+        <label for="number">Introduce aquí tu numero:</label>
+        <input
+          class="js-inputNum"
+          type="number"
+          placeholder="Add a number"
+          id="number"
+        />
         <input class="js-btn btn" type="button" value="Prueba" />
+        <input class="js-reset btn" type="button" value="Reset" />
       </form>
       <p class="clues js-clue">Pista: Escribe el numero y dale a Prueba</p>
       <p>Número de intentos: <span class="tries js-tries">0</span></p>
